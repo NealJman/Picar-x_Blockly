@@ -118,6 +118,9 @@ def center():
 
     px.set_dir_servo_angle(0)
 
+def stop():
+    px.stop()
+
 
 def detect_color(param):
     
