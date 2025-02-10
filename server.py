@@ -83,6 +83,42 @@ Color = "none"
 px.set_cliff_reference([1, 1,1])
 
 
+#Car movement functions
+
+def move_forward (distance = 1):
+
+    px.forward(10)
+
+    if distance != 100:
+
+        sleep(1.08 * distance)
+
+
+def move_backward (distance = 1):
+
+
+    px.backward(10)
+
+    if distance != 100:
+
+        sleep(1.08 * distance)
+
+
+def turn_left():
+
+    px.set_dir_servo_angle(-20)
+
+
+def turn_right():
+
+    px.set_dir_servo_angle(20)
+
+
+def center():
+
+    px.set_dir_servo_angle(0)
+
+
 def detect_color(param):
     
     global do_color
